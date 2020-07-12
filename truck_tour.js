@@ -27,8 +27,8 @@ Time: O(N^2), Space: O(1)
 N = petrolpumps.length
 1. Iterate through petrolpumps & keep track of:
     - start(index), cur(index)
-    - stops (# of pumps passed through, succeed when stops == N)
     - tank (keeps track of petrol gained through previous pumps)
+    - stops (# of pumps passed through, succeed when stops == N)
 2. Check the following conditions upon each iteration of petrolpumps: 
     a. If tank + (petrol from cur pump) - (petrol for next pump) < 0, 
        cannot complete circle from start, check if start++ can complete circle & reset variables (tank = stops = 0)

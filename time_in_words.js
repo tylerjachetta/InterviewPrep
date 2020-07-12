@@ -26,9 +26,13 @@ function readLine() {
 
 /*
 Time: O(1), Space: O(1)
-Store 1-20 as english numerals in nums array to convert h & m
-EX: nums[h - 1] = "h in english numerals"
-Use modulus operator & concatenation to derive m (minutes) > 20
+1. Store 1-20 as english numerals in nums array to convert h & m
+    -nums[h - 1] = "h in english numerals"
+2. Seperate return value into the following substrings 
+    -hourStr, minStr, prepStr ("to"/"past"), quantStr (quantity "minute(s)") 
+3. Use conditions to determine values for substrings listed above
+   -Use modulus operator & concatenation to derive m (minutes) > 20
+5. Concatenate substrings for return value
 -Tyler Jachetta
 */
 function timeInWords(h, m) {

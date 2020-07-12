@@ -30,7 +30,7 @@ Time: O(1), Space: O(1)
     -nums[h - 1] = "h in english numerals"
 2. Seperate return value into the following substrings 
     -hourStr, minStr, prepStr ("to"/"past"), quantStr (quantity "minute(s)") 
-3. Use conditions to determine values for substrings listed above
+3. Use conditionals to determine values for substrings listed above
    -Use modulus operator & concatenation to derive m (minutes) > 20
 5. Concatenate substrings for return value
 -Tyler Jachetta

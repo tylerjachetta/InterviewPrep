@@ -25,7 +25,7 @@ function readLine() {
 }
 
 /*
-Time: O(1), Memory: O(1)
+Time: O(1), Space: O(1)
 Store 1-20 as english numerals in nums array to convert h & m
 EX: nums[h - 1] = "h in english numerals"
 Use modulus operator & concatenation to derive m (minutes) > 20

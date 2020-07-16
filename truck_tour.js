@@ -40,9 +40,9 @@ function truckTour(petrolpumps) {
     let start = 0;
     for(let stops = 0, tank = 0, cur = 0; stops < petrolpumps.length;) {
         tank += petrolpumps[cur][0] - petrolpumps[cur][1];
-        if(start == petrolpumps.length - 1 && tank < 0)
-            return -1; 
-        else if(tank < 0) {
+        if(tank < 0) {
+            if(start == petrolpumps.length - 1)
+                return -1; 
             stops = 0;
             tank = 0;
             cur = ++start;
